@@ -1,0 +1,31 @@
+https://youtu.be/ITOZkzjtjUA?si=X80NJBFHumKPNc9t&t=20316
+
+mkdir project-folder
+cd project-folder
+python3 -m venv venv
+source venv/bin/activate
+pip install pip --upgrade
+pip install reflex
+reflex init
+option 0
+
+git init
+git branch -m main
+
+# recreate enviroment
+pip install -r requirements.txt
+ 
+# compile and execute project
+reflex run
+
+
+
+option 2
+pip install openai
+
+
+
+#databases
+reflex db init
+reflex db makemigrations
+reflex db migrate
