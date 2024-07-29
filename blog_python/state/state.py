@@ -87,6 +87,8 @@ class State(rx.State):
         Returns:
             None
         """
+        # Set the current post to None
+        self.post = None
         # If the category is empty, display all posts
         if self.category == "":
             self.posts = all_posts
@@ -96,8 +98,7 @@ class State(rx.State):
             tmp_posts = filter(self.test_post_category, all_posts)
             # Convert the filtered posts to a list
             self.posts = list(tmp_posts)
-        # Set the current post to None
-        self.post = None
+
 
 
     @rx.var
