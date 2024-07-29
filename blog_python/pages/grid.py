@@ -8,7 +8,14 @@ from .base import base_page
 
 @rx.page(
     route=BLOG_POSTS_ROUTE,
-    # on_load=State.load_posts,
+    # on_load=State.load_posts,  # Load posts when the page is loaded
 )
 def grid_page() -> rx.Component:
-    return base_page(cards())
+    """
+    Renders the grid page.
+
+    Returns:
+        The rendered component.
+    """
+    # Create and return the base page component with the cards component
+    return base_page(cards())  # Create the base page component with the cards component

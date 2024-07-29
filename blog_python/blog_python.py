@@ -6,6 +6,14 @@ from .pages import grid_page, post_page
 
 
 def index() -> rx.Component:
+    """
+    The index page component.
+
+    Returns:
+        The rendered component of the index page.
+    """
+    # This function returns the grid page component
+    # which is the main page of the application.
     return grid_page()
 
 
